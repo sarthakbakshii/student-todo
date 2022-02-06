@@ -1,0 +1,118 @@
+.Todo{
+    /* border: 1px solid; */
+    width: 600px;
+    font-family: sans-serif;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    box-sizing: border-box;
+    
+}
+.App{
+      border: 1px solid;
+      /* box-sizing: border-box; */
+      margin: 0px;
+
+      height: 100vh;
+    background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+
+}
+.title{
+    /* border: 1px solid; */
+}
+.addBtn{
+    color: rgb(255, 255, 255);
+}
+.InputBox{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 40px;
+}
+.InputBox input[ type = "text"]{
+    width: 35%;
+    
+}
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  /* margin: 5px 1px 3px 0px; */
+  border: 1px solid #DDDDDD;
+  padding-left: 20px;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  /* margin: 5px 1px 3px 0px; */
+  border: 1px solid rgba(81, 203, 238, 1);
+  padding-left: 20px;
+}
+.InputBox .addBtn{
+    width: 25%;
+}
+
+.inputTitle, .inputBody{
+    /* display: none; */
+}
+
+
+/* --------------- */
+
+.container{
+    /* border: 1px solid; */
+    margin-top: 30px ;
+}
+
+.container div{
+      /* border: 1px solid; */
+      padding: 5px ;
+}
+.red{
+    color: rgb(40, 72, 255);
+}
+
+.green{ color: rgb(42, 165, 5);}
+
+.btnBox{
+   /* border: 1px solid; */
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+}
+.singleList{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cursiorPointer{
+    cursor: pointer;
+}
+.mr{
+    text-transform: capitalize;
+}
+
+
+.deleteBtn{
+    transition: .3s;
+    transform: translateX(100px);
+}
+.deleteBtn:hover{
+    color: red;
+}
+.singleList:hover .deleteBtn{
+    transition: .3s;
+     transform: translateX(0px);
+     
+}
