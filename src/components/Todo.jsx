@@ -21,7 +21,7 @@ const Todo = () => {
     }
 
     const getTodo = () =>{
-        fetch(`http://localhost:3030/todo?_page=${page}&_limit=3`)
+        fetch(`https://mighty-temple-00792.herokuapp.com/todo?_page=${page}&_limit=3`)
         .then( res =>  res.json() )
         .then( data => { 
             console.log("data",data);
@@ -39,7 +39,7 @@ const Todo = () => {
         // axios.delete("http://localhost:3030/todo",{id : data})
         // .then( console.log("deleted") )
 
-        fetch('http://localhost:3030/todo/' + id, {
+        fetch('https://mighty-temple-00792.herokuapp.com/todo/' + id, {
         method: 'DELETE',
         })
         .then(res => res.text()) // or res.json()
@@ -72,7 +72,7 @@ const Todo = () => {
             <button className='prev'  style={{ display: 'none' }}>Prev</button>
 
            <div className='btnBox'>
-                      <Button disabled={false} className='mr' variant="outlined" startIcon={<KeyboardDoubleArrowLeftTwoToneIcon />} 
+                      <Button  className='mr' variant="outlined" startIcon={<KeyboardDoubleArrowLeftTwoToneIcon />} 
                        disabled={page==1?true:false} 
                        sx={{ textTransform: 'uppercase' }}
                        
@@ -81,7 +81,7 @@ const Todo = () => {
                     }}>
                         Prev
                     </Button>
-                    <Button disabled={false} className='mr' variant="outlined" endIcon={<KeyboardDoubleArrowRightTwoToneIcon />}
+                    <Button  className='mr' variant="outlined" endIcon={<KeyboardDoubleArrowRightTwoToneIcon />}
                     disabled={ todo.length < 3?true:false} 
                     onClick={ () =>{
                          setPAge(page + 1)

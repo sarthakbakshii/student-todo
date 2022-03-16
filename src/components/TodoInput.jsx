@@ -20,7 +20,7 @@ function TodoInput({ togleCheck}) {
 
     const addTodo = (input1,input2) =>{
         let data = {title : input1, body : input2 , status : false};
-        axios.post("http://localhost:3030/todo",data);
+        axios.post("https://mighty-temple-00792.herokuapp.com/todo",data);
         togleCheck()
         // setTodo([...todo,data])
         // console.log(todo);
